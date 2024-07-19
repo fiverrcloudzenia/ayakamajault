@@ -1,0 +1,13 @@
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: fastapi-hpa
+  namespace: kustomize1
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: fastapi
+  minReplicas: 3  # Minimum number of pods
+  maxReplicas: 6  # Maximum number of pods
+  targetCPUUtilizationPercentage: 70

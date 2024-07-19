@@ -1,0 +1,8 @@
+namespace: kustomize1
+
+resources:
+  - namespace.yaml
+  - ../../base/fastapi/
+  - ../../base/pgadmin/
+  - ../../base/postgresql/
+  - ../../base/certificate/
