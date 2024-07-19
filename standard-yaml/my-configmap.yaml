@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-configmap
+  namespace: standard
+data:
+  email: admin@admin.com  # This should be the email for PGAdmin.
+  pgadminpwd: admin       # PGAdmin password, adjust as needed.
+  user: postgres          # PostgreSQL user, adjust as needed.
+  db: yourdatabase        # Database name for PostgreSQL.
+  pwd: securepassword     # PostgreSQL password, adjust as needed.
+  value: trust            # Host authentication method for PostgreSQL.
