@@ -1,4 +1,0 @@
-namespace: kustomize
-resources:
-- deployment.yaml
-- service.yaml

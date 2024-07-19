@@ -1,8 +1,0 @@
-resources:
-  - fastapi/deployment.yaml
-  - fastapi/service.yaml
-  - postgresql/deployment.yaml
-  - postgresql/service.yaml
-  - postgresql/pvc.yaml
-  - pgadmin/deployment.yaml
-  - pgadmin/service.yaml

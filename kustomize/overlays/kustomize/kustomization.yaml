@@ -1,3 +1,0 @@
-namespace: kustomize
-resources:
-  - ../../base
