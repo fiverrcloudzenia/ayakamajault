@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: fastapi-service
+  namespace: {{ .Values.namespace }}
+  labels:
+    app: fastapi
+spec:
+  type: {{ (index .Values.services 1).type }}
+  ports:
+    - port: {{ (index .Values.services 1).port }}
+      targetPort: {{ (index .Values.services 1).targetPort }}
+      nodePort: {{ (index .Values.services 1).nodePort | default 0 }}
+  selector:
+    app: fastapi
+
